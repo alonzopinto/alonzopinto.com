@@ -1,0 +1,72 @@
+
+.hPro {
+    display: grid;
+    gap: 1em;
+    /* background:#30336b; */
+    grid-template-columns: 10% 80%;
+    padding: 15px;}
+
+.hPro .divlg {
+    font-size: 4em;
+    text-align: center; }
+
+    .hPro h1 {
+        color: rgb(102, 102, 102);
+        font-size: 3em;}
+
+    .hPro h2 { 
+        color: rgb(102, 102, 102);
+        font-size: 1.2em;
+    }
+
+.containerCuatro {
+    width: 100%;
+    height: 600px;
+    margin: 0em auto;
+}
+    
+.containerCuatro .mainPro {
+    width: 100%;
+    display: grid;
+    background: #000000;
+    grid-template-columns: repeat(3, 1fr);
+
+  }
+
+.mainPro div {
+    width: 220px;
+    height: 105px;
+    margin: 0;
+    padding: 0; }
+
+.divL .divR .divC {
+    display: flex; }
+
+.divL .divimg {
+    background-size: 100%;
+    background-position: center;
+    background-image: url('../img/Proyectos/IMG-8240.JPG'); 
+    transition: .6s;
+    cursor: zoom-in; }
+
+.divR .divimg {
+    background-size: 100%;
+    background-position: center;
+    background-image: url('../img/Proyectos/IMG-8250.JPG'); 
+    transition: .6s;
+    cursor: zoom-in;
+     }
+
+.divC .divimg {
+    background-size: 100%;
+    background-position: center;
+    background-image: url('../img/Proyectos/pentagono.JPG'); 
+    transition: .6s;
+    cursor: zoom-in;
+    }
+      
+.divimg:hover {
+    background-size: 110%;
+    background-position: center;
+} 
+

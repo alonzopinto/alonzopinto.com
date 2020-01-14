@@ -1,0 +1,38 @@
+*{  margin: 0px; 
+    padding: 0px; 
+}
+
+.boxparabola{
+    padding: 5rem 0rem;
+    display: grid;
+    gap: 2em;
+}
+
+.hparabola {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.hparabola h1 {
+    margin-top: 2em;
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Comfortaa';
+}
+
+.parabolaUno {
+    grid-column: 1;
+    grid-row: 2;
+}
+.parabolaUno h2 {
+    padding-left: 1em;
+    font-size: 1.8em;
+    font-family: 'Comfortaa';
+
+}
+.parabolaUno img{
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #1f022e;
+    width: 100%;
+}

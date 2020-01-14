@@ -1,0 +1,135 @@
+.works-grid{
+    display: grid;
+    width: 100%;
+    gap: 60px;
+    transition: all 1.2s ease .2s;   
+    grid-template-columns: 40% 50%;
+}
+
+.works-grid:hover {
+    background:#e84393;
+    color: #ffffff;
+}
+
+.containerfive{
+    align-self: center; 
+}
+
+.headercontainerfive{
+    align-self: center;
+}
+
+.headercontainerfive h1{
+    text-align:center;
+    font-size: 2.2em;
+    margin-bottom: 2em;
+    font-family: 'Comfortaa';
+}
+.headercontainerfive h3 {
+    font-size: 1.2em;
+    text-align: center;
+    font-family: 'Alegreya';
+}
+
+.single-works {
+    margin-left: 0em;
+    padding: 0px;
+    overflow: hidden;
+    position: relative;
+}
+
+.single-works img {
+    width: 100%;
+}
+
+.overlay-text .caja{
+    margin-top: 9em;
+    align-self: center; 
+    display: block;
+    color: #e7e0e0;
+}
+
+.single-works .overlay-text {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5em;
+    background: rgba(26, 25, 25, 0.74);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    justify-content: center;
+    transition: all 2s ease .1s;
+    font-family: 'Comfortaa';
+}
+
+.single-works .overlay-text::before{
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    left: 25px;
+    right: 25px;
+}
+.single-works .overlay-text::after{
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    top: 25px;
+    bottom: 25px;
+}
+
+.single-works .overlay-text::before, .single-works .overlay-text::after{
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    bottom: 30px;
+    right: 30px;
+    opacity: 0;
+    z-index: 5;
+    transform: scale(1.5);
+    transition: all 1s ease .2s;
+}
+
+.single-works:hover{ transform: translateY(0px);}
+
+.single-works:hover .overlay-text{
+    opacity: 1;
+}
+
+.single-works:hover .overlay-text:before,
+.single-works:hover .overlay-text:after{
+    opacity: 1;
+    transform: scale(1);
+}
+
+@media only screen and (max-width: 1190px) {
+    
+    .works-grid  {
+        justify-content: center;
+        display:flex;
+        flex-wrap: wrap; 
+    }
+
+    .overlay-text .caja{
+        margin-top: 5em;
+        align-self: center; 
+        color: #e7e0e0;
+    } 
+    .caja h3, .caja h4 {
+        font-size: .8em;
+    }  
+
+    .headercontainerfive{
+        padding: 0px 40px;
+        text-align: justify;
+    }
+
+    .headercontainerfive h1, .headercontainerfive h3{
+        font-size: 1em;
+    }
+
+
+    
+    
+    
+    
+    }
